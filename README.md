@@ -23,21 +23,20 @@ func studentsCDF(t float64, df uint) {
 
 Note that the value returned can also be considered the corresponding p-value for a one-sided t-test.
 
-### Installation
-
-`go get github.com/gragas/beta`
-
-### Things of Note
-
-It should be noted that this implementation of `BetaInc` has undefined behavior for a < 0 || b < 0.
-
-
 ### Implementation
 
 This implementation is a near direct port of the related functions found in GSL's `gsl_sf_gamma.h`. The related functions are:
 
 1. `gl_sf_beta_inc`
 2. `beta_cont_frac`
+
+### Installation
+
+`go get github.com/fschr/beta`
+
+### Things of Note
+
+It should be noted that this implementation of `BetaInc` has undefined behavior for a < 0 || b < 0.
 
 ## Contributing
 
